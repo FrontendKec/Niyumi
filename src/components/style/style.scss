@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+$base-color: deepskyblue;
+$azure-color: azure;
+$gray-color: gray;
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: linear-gradient(to top, rgb(20, 20, 20, 0.6), rgb(20, 20, 20)), 
+    url(https://i0.wp.com/data.whicdn.com/images/338918955/original.gif?w=1080&ssl=1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navigation {
+    position: relative;
+    .brand {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        a {
+            color: $base-color;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        a {
+            color: $azure-color;
+            font-size: 18px;
+            border-bottom: 2px solid transparent;
+            padding: 2px 2px;
+            &:hover {
+                border-bottom: 2px solid $base-color;
+            }
+        }
+    }
+}
+
+.anime-container {
+    position: relative;
+    .container-title {
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+        padding-top: 40px;
+        padding-left: 20px;
+        h2 {
+            color: $base-color;
+        }
+    }
+    .container-subtitle {
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+        padding-left: 20px;
+        span {
+            color: $gray-color;
+        }
+    }
+    .container-view-more {
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        padding-right: 40px;
+        a {
+            color: $azure-color;
+            &:hover {
+                color: $base-color;
+            }
+        }
+    }
+    .container-airing-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+        .anime-card {
+            margin: 10px;
+            .banner {
+                width: 160px;
+                height: 240px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+            }
+            .title {
+                background-color: rgba(0, 191, 255, 0.315);
+                color: $azure-color;
+                width: 160px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                border-radius: 20px;
+                padding: 10px 20px;
+                margin-top: 10px;
+                a {
+                    color: $azure-color;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .container-popular-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+        .anime-card {
+            margin: 10px;
+            .banner {
+                width: 160px;
+                height: 240px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+            }
+            .title {
+                background-color: rgba(0, 191, 255, 0.315);
+                color: $azure-color;
+                width: 160px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                border-radius: 20px;
+                padding: 10px 20px;
+                margin-top: 10px;
+                a {
+                    color: $azure-color;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .container-upcoming-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+        .anime-card {
+            margin: 10px;
+            .banner {
+                width: 160px;
+                height: 240px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+            }
+            .title {
+                background-color: rgba(0, 191, 255, 0.315);
+                color: $azure-color;
+                width: 160px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                border-radius: 20px;
+                padding: 10px 20px;
+                margin-top: 10px;
+                a {
+                    color: $azure-color;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.content-container {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    .content-title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 80px;
+        h1 {
+            color: $azure-color;
+            font-size: 40px;
+        }
+    }
+    .content-subtitle {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        p {
+            color: $azure-color;
+            font-size: 20px;
+        }
+    }
+    .content-intro {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        p {
+            color: $azure-color;
+            font-size: 20px;
+        }
+    }
+}
+
+.copyright {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    p {
+        color: $azure-color;
+    }
+    a {
+        color: $azure-color;
+        &:hover {
+            color: $base-color;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(20, 20, 20, 0.6);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 191, 255, 0.315);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: deepskyblue;
+}
