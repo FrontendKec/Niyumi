@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: linear-gradient(to top, rgba(20, 20, 20, 0.6), rgb(20, 20, 20)), url(https://i0.wp.com/data.whicdn.com/images/338918955/original.gif?w=1080&ssl=1);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navigation {
+  position: relative;
+}
+.navigation .brand {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.navigation .brand a {
+  color: deepskyblue;
+  font-size: 40px;
+  font-weight: bold;
+}
+.navigation .links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.navigation .links a {
+  color: azure;
+  font-size: 18px;
+  border-bottom: 2px solid transparent;
+  padding: 2px 2px;
+}
+.navigation .links a:hover {
+  border-bottom: 2px solid deepskyblue;
+}
+
+.anime-container {
+  position: relative;
+}
+.anime-container .container-title {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+.anime-container .container-title h2 {
+  color: deepskyblue;
+}
+.anime-container .container-subtitle {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  padding-left: 20px;
+}
+.anime-container .container-subtitle span {
+  color: gray;
+}
+.anime-container .container-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}
+.anime-container .container-cards .anime-card {
+  margin: 10px;
+}
+.anime-container .container-cards .anime-card .banner {
+  width: 160px;
+  height: 240px;
+}
+.anime-container .container-cards .anime-card .banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.anime-container .container-cards .anime-card .title {
+  background-color: rgba(0, 191, 255, 0.315);
+  color: azure;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.anime-container .container-cards .anime-card .title a {
+  color: azure;
+  font-size: 16px;
+}
