@@ -14,6 +14,7 @@ $gray-color: gray;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 body {
     background: linear-gradient(to top, rgb(20, 20, 20, 0.6), rgb(20, 20, 20)), 
     url(https://i0.wp.com/data.whicdn.com/images/338918955/original.gif?w=1080&ssl=1);
@@ -73,7 +74,19 @@ body {
             color: $gray-color;
         }
     }
-    .container-cards {
+    .container-view-more {
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        padding-right: 40px;
+        a {
+            color: $azure-color;
+            &:hover {
+                color: $base-color;
+            }
+        }
+    }
+    .container-airing-cards {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -105,6 +118,92 @@ body {
                     font-size: 16px;
                 }
             }
+        }
+    }
+    .container-popular-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+        .anime-card {
+            margin: 10px;
+            .banner {
+                width: 160px;
+                height: 240px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+            }
+            .title {
+                background-color: rgba(0, 191, 255, 0.315);
+                color: $azure-color;
+                width: 160px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                border-radius: 20px;
+                padding: 10px 20px;
+                margin-top: 10px;
+                a {
+                    color: $azure-color;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .container-upcoming-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+        .anime-card {
+            margin: 10px;
+            .banner {
+                width: 160px;
+                height: 240px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+            }
+            .title {
+                background-color: rgba(0, 191, 255, 0.315);
+                color: $azure-color;
+                width: 160px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                border-radius: 20px;
+                padding: 10px 20px;
+                margin-top: 10px;
+                a {
+                    color: $azure-color;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    p {
+        color: $azure-color;
+    }
+    a {
+        color: $azure-color;
+        &:hover {
+            color: $base-color;
         }
     }
 }
