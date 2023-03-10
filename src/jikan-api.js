@@ -1,4 +1,4 @@
-const api = "https://api.jikan.moe/v4/top/anime?filter=bypopularity&type=tv&page=1";
+const api = "https://api.jikan.moe/v4/top/anime?filter=bypopularity&type=tv&page=1&limit=7";
 (function fetchAPI(api) {
     fetch(api).then(response=>response.json()).then(data=>{
         data.data.forEach(anime => {
