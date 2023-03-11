@@ -184,6 +184,244 @@ body {
   color: azure;
   font-size: 16px;
 }
+.anime-container .container-monday-anime-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}
+.anime-container .container-monday-anime-cards .anime-card {
+  margin: 10px;
+}
+.anime-container .container-monday-anime-cards .anime-card .banner {
+  width: 160px;
+  height: 240px;
+}
+.anime-container .container-monday-anime-cards .anime-card .banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.anime-container .container-monday-anime-cards .anime-card .title {
+  background-color: rgba(0, 191, 255, 0.315);
+  color: azure;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.anime-container .container-monday-anime-cards .anime-card .title a {
+  color: azure;
+  font-size: 16px;
+}
+.anime-container .container-tuesday-anime-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}
+.anime-container .container-tuesday-anime-cards .anime-card {
+  margin: 10px;
+}
+.anime-container .container-tuesday-anime-cards .anime-card .banner {
+  width: 160px;
+  height: 240px;
+}
+.anime-container .container-tuesday-anime-cards .anime-card .banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.anime-container .container-tuesday-anime-cards .anime-card .title {
+  background-color: rgba(0, 191, 255, 0.315);
+  color: azure;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.anime-container .container-tuesday-anime-cards .anime-card .title a {
+  color: azure;
+  font-size: 16px;
+}
+.anime-container .container-wednesday-anime-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}
+.anime-container .container-wednesday-anime-cards .anime-card {
+  margin: 10px;
+}
+.anime-container .container-wednesday-anime-cards .anime-card .banner {
+  width: 160px;
+  height: 240px;
+}
+.anime-container .container-wednesday-anime-cards .anime-card .banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.anime-container .container-wednesday-anime-cards .anime-card .title {
+  background-color: rgba(0, 191, 255, 0.315);
+  color: azure;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.anime-container .container-wednesday-anime-cards .anime-card .title a {
+  color: azure;
+  font-size: 16px;
+}
+.anime-container .container-thursday-anime-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}
+.anime-container .container-thursday-anime-cards .anime-card {
+  margin: 10px;
+}
+.anime-container .container-thursday-anime-cards .anime-card .banner {
+  width: 160px;
+  height: 240px;
+}
+.anime-container .container-thursday-anime-cards .anime-card .banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.anime-container .container-thursday-anime-cards .anime-card .title {
+  background-color: rgba(0, 191, 255, 0.315);
+  color: azure;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.anime-container .container-thursday-anime-cards .anime-card .title a {
+  color: azure;
+  font-size: 16px;
+}
+.anime-container .container-friday-anime-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}
+.anime-container .container-friday-anime-cards .anime-card {
+  margin: 10px;
+}
+.anime-container .container-friday-anime-cards .anime-card .banner {
+  width: 160px;
+  height: 240px;
+}
+.anime-container .container-friday-anime-cards .anime-card .banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.anime-container .container-friday-anime-cards .anime-card .title {
+  background-color: rgba(0, 191, 255, 0.315);
+  color: azure;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.anime-container .container-friday-anime-cards .anime-card .title a {
+  color: azure;
+  font-size: 16px;
+}
+.anime-container .container-saturday-anime-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}
+.anime-container .container-saturday-anime-cards .anime-card {
+  margin: 10px;
+}
+.anime-container .container-saturday-anime-cards .anime-card .banner {
+  width: 160px;
+  height: 240px;
+}
+.anime-container .container-saturday-anime-cards .anime-card .banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.anime-container .container-saturday-anime-cards .anime-card .title {
+  background-color: rgba(0, 191, 255, 0.315);
+  color: azure;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.anime-container .container-saturday-anime-cards .anime-card .title a {
+  color: azure;
+  font-size: 16px;
+}
+.anime-container .container-sunday-anime-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}
+.anime-container .container-sunday-anime-cards .anime-card {
+  margin: 10px;
+}
+.anime-container .container-sunday-anime-cards .anime-card .banner {
+  width: 160px;
+  height: 240px;
+}
+.anime-container .container-sunday-anime-cards .anime-card .banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.anime-container .container-sunday-anime-cards .anime-card .title {
+  background-color: rgba(0, 191, 255, 0.315);
+  color: azure;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.anime-container .container-sunday-anime-cards .anime-card .title a {
+  color: azure;
+  font-size: 16px;
+}
 
 .content-container {
   position: relative;
