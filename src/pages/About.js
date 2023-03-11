@@ -27,9 +27,6 @@ function About() {
             <p>Have fun!</p>
         </div>
       </div>
-      <div className="copyright">
-        <p>Copyright @2023. <a href="./">Niyumi</a>. All rights reserved</p>
-      </div>
     </div>
   );
 }
