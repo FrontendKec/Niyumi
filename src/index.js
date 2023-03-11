@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Index from './pages/Index';
-import Schedule from './pages/Schedule';
-import About from './pages/About';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Index from "./pages/Index";
+import Schedule from "./pages/Schedule";
+import About from "./pages/About";
+import reportWebVitals from "./reportWebVitals";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-const app = ReactDOM.createRoot(document.getElementById('app'));
+const app = ReactDOM.createRoot(document.getElementById("app"));
 app.render(
     <RouterProvider router={router}/>
 );

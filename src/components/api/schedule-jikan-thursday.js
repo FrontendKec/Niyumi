@@ -1,9 +1,9 @@
-const api = 'https://api.jikan.moe/v4/schedules?filter=thursday&kids=false&page=1&limit=14';
+// @ts-check
+const api_thursday = 'https://api.jikan.moe/v4/schedules?filter=thursday&kids=false&page=1&limit=14';
 
 (function fetchAPI(api) {
     fetch(api).then(response=>response.json()).then(data=>{
-        data.data.forEach(anime => {
-            let container = document.querySelector('.container-thursday-anime-cards');
+        data.data.forEach((/** @type {{ images: { webp: { image_url: any; }; }; title: String; url: any; }} */ anime) => {
             const image = anime.images.webp.image_url;
             const title = anime.title;
             const url = anime.url;
@@ -13,7 +13,7 @@ const api = 'https://api.jikan.moe/v4/schedules?filter=thursday&kids=false&page=
             <div class="banner"><img src="${image}" text="${title}"></img></div>
             <div class="title"><a href="${url}" target="_blank">${title}</a></div>
             `;
-            container.appendChild(card);
+            document.querySelector('.container-thursday-anime-cards')?.appendChild(card);
         });
     }).catch(error=>console.error(error));
-})(api);
+})(api_thursday);
