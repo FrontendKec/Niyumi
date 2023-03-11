@@ -21,7 +21,7 @@ function About() {
             <p>Everything related to anime 🌸</p>
         </div>
         <div className='content-intro'>
-            <p>Welcome to Tsukyumi home of anime!</p>
+            <p>Welcome to Niyumi home of anime!</p>
             <p>Here you will find different info about anime</p>
             <p>(popular, upcoming, high rated anime)..etc</p>
             <p>Have fun!</p>
