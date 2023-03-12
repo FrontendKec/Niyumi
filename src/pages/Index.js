@@ -1,7 +1,62 @@
-import "../components/style/style.css";
-import "../components/api/index-jikan-airing";
-import "../components/api/index-jikan-popular";
-import "../components/api/index-jikan-upcoming";
+const jikan_api = {
+  "airing": "https://api.jikan.moe/v4/top/anime?filter=airing&type=tv&page=1&limit=14",
+  "popular": "https://api.jikan.moe/v4/top/anime?filter=bypopularity&type=tv&page=1&limit=14",
+  "upcoming": "https://api.jikan.moe/v4/top/anime?filter=upcoming&type=tv&page=1&limit=14"
+}
+
+async function getAiringAnime() {
+	const response = await fetch(jikan_api.airing);
+    const data = await response.json();
+    data.data.forEach(anime => {
+      const anime_image = anime.images.webp.image_url;
+      const anime_title = anime.title;
+      const anime_url = anime.url;
+      const card = document.createElement("div");
+      card.classList.add("anime-card");
+      card.innerHTML = `
+      <div class="banner"><img src="${anime_image}" text="${anime_title}"></img></div>
+      <div class="title"><a href="${anime_url}" target="_blank">${anime_title}</a></div>
+      `;
+      document.querySelector(".container-airing-cards")?.appendChild(card);
+    });
+}
+setTimeout(() => { getAiringAnime(); }, 1000);
+
+async function getPopularAnime() {
+	const response = await fetch(jikan_api.popular);
+    const data = await response.json();
+    data.data.forEach(anime => {
+      const anime_image = anime.images.webp.image_url;
+      const anime_title = anime.title;
+      const anime_url = anime.url;
+      const card = document.createElement("div");
+      card.classList.add("anime-card");
+      card.innerHTML = `
+      <div class="banner"><img src="${anime_image}" text="${anime_title}"></img></div>
+      <div class="title"><a href="${anime_url}" target="_blank">${anime_title}</a></div>
+      `;
+      document.querySelector(".container-popular-cards")?.appendChild(card);
+    });
+}
+setTimeout(() => { getPopularAnime(); }, 2000);
+
+async function getUpcomingAnime() {
+	const response = await fetch(jikan_api.upcoming);
+    const data = await response.json();
+    data.data.forEach(anime => {
+      const anime_image = anime.images.webp.image_url;
+      const anime_title = anime.title;
+      const anime_url = anime.url;
+      const card = document.createElement("div");
+      card.classList.add("anime-card");
+      card.innerHTML = `
+      <div class="banner"><img src="${anime_image}" text="${anime_title}"></img></div>
+      <div class="title"><a href="${anime_url}" target="_blank">${anime_title}</a></div>
+      `;
+      document.querySelector(".container-upcoming-cards")?.appendChild(card);
+    });
+}
+setTimeout(() => { getUpcomingAnime(); }, 3000);
 
 function Index() {
   return (

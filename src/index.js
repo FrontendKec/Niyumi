@@ -4,6 +4,7 @@ import Index from "./pages/Index";
 import Schedule from "./pages/Schedule";
 import About from "./pages/About";
 import reportWebVitals from "./reportWebVitals";
+import "./css/style.css";
 import {
   createBrowserRouter,
   RouterProvider,
