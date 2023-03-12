@@ -6,6 +6,7 @@ Niyumi is a web application that uses [JikanAPI](https://jikan.moe/) to retrieve
 Run the following command to clone the repository:
 ```sh
 git clone https://github.com/FrontendKec/Niyumi.git
+cd Niyumi
 ```
 start the server with the following command:
 ```sh
