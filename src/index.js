@@ -1,34 +1,30 @@
-import React from "react";
+import React from 'react';
 import ReactDOM from "react-dom/client";
-import Index from "./pages/Index";
-import Schedule from "./pages/Schedule";
-import About from "./pages/About";
-import reportWebVitals from "./reportWebVitals";
-import "./css/style.css";
+import Index from './pages/Index';
+import Schedule from './pages/Schedule';
+import About from './pages/About';
+import './assets/css/style.css';
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
+} from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Index />,
   },
   {
-    path: "schedule",
+    path: 'schedule',
     element: <Schedule />,
   },
   {
-    path: "about",
+    path: 'about',
     element: <About />,
   },
 ]);
 
-const app = ReactDOM.createRoot(document.getElementById("app"));
+const app = ReactDOM.createRoot(document.getElementById('app'));
 app.render(
     <RouterProvider router={router}/>
 );
-
-
-reportWebVitals();

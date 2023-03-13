@@ -1,16 +1,10 @@
+import Navbar from "../components/navbar";
+import Copyright from "../components/copyright";
+
 function About() {
   return (
     <div className="about">
-      <div className="navigation">
-        <div className="brand">
-          <a href="./">Niyumi</a>
-        </div>
-        <div className="links">
-          <a href="./">Home</a>
-          <a href="./schedule">Schedule</a>
-          <a href="./about">About</a>
-        </div>
-      </div>
+      <Navbar />
       <div className="content-container">
         <div className="content-title">
             <h1>⋆｡ﾟ Niyumi ﾟ｡⋆</h1>
@@ -25,6 +19,7 @@ function About() {
             <p>Have fun!</p>
         </div>
       </div>
+      <Copyright />
     </div>
   );
 }
